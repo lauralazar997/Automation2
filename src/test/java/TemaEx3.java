@@ -5,10 +5,10 @@ import org.testng.annotations.Test;
 
 public class TemaEx3 {
     @BeforeClass
-    public static void openExample() {                //test care deschide un browser, navigheaza catre un url si il inchide
+    public static void openFacebook() {                //test care deschide un browser, navigheaza catre un url si il inchide
         WebDriver driver;
         driver = new ChromeDriver();
-        driver.get("https://www.example.com/");
+        driver.get("https://www.facebook.com/");
         driver.close();
     }
     @Test
