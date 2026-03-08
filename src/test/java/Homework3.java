@@ -54,6 +54,7 @@ public class Homework3 {
             userDepartment.sendKeys("1234");
             WebElement submitBtn = driver.findElement(By.xpath("//button[text()='Submit']"));
             submitBtn.click();
+
         }
     }
 
