@@ -41,6 +41,7 @@ public class Tema29Martie {
 
         String titluTab = driver.getTitle();
         System.out.println(titluTab);
+
        Assert.assertTrue(titluTab.contains("demosite"));
        String tab1 = driver.getWindowHandle();
 
@@ -53,13 +54,14 @@ public class Tema29Martie {
             throw new RuntimeException(e);
         }
 
-       titluTab = driver.getTitle();
+        titluTab = driver.getTitle();
         System.out.println(titluTab);
         Assert.assertTrue(titluTab.contains("Practice Software Testing"));
+
         String tab2 = driver.getWindowHandle();
 
-
         driver.switchTo().window(tab1);
+
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
@@ -122,12 +124,6 @@ public class Tema29Martie {
         driver.switchTo().window(tab1);
         driver.navigate().refresh();
         Assert.assertTrue(driver.getTitle().contains("Practice Software Testing"), "Nu s-a revenit pe primul tab");
-
-    }
-
-    //EX5
-    @Test
-    public void ex5(){
 
     }
 }
