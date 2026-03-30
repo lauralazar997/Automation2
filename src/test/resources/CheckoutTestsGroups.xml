@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="regression suite">
+    <test name="checkout tests">
+        <groups>
+            <run>
+                <include name="regression"/>
+                <exclude name="slow"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="CheckoutTests"/>
+        </classes>
+    </test>
+</suite>
