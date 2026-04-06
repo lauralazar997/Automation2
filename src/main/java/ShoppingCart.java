@@ -29,14 +29,11 @@ public class ShoppingCart {
 
     //nu face ce trebuie main-ul dar nu imi dau seama daca trebuia sa folosesc o lista aici de fapt
     public static void main(){
-        ShoppingCart product1 = new ShoppingCart(100);
-        ShoppingCart product2 = new ShoppingCart(100);
-        ShoppingCart product3 = new ShoppingCart(100);
-        product1.addProduct(20.5);
-        product2.addProduct(10.2);
-        product3.addProduct(5);
-        product1.removeProduct(20.5);
-        System.out.println(product1.totalPrice);
-
+        ShoppingCart product = new ShoppingCart(100);
+        product.addProduct(20.5);
+        product.addProduct(10);
+        product.addProduct(5);
+        product.removeProduct(20.5);
+        System.out.println(product.totalPrice);
     }
 }
