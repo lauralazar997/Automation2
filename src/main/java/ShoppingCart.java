@@ -33,6 +33,5 @@ public class ShoppingCart {
         product.addProduct(5);
         product.removeProduct(20.5);
         System.out.println(product.totalPrice);
-
     }
 }
