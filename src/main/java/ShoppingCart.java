@@ -17,7 +17,7 @@ public class ShoppingCart {
         this.totalPrice = this.totalPrice - price;
         System.out.println("Pretul total dupa ce produsul a fost scos este: " + this.totalPrice);
     }
-    
+
     public void getTotal() {
         if (this.totalPrice >= 0) {
             System.out.println("Totalul este: " + this.totalPrice);
