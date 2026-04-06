@@ -3,7 +3,6 @@ import java.util.ArrayList;
 public class ShoppingCart {
     double totalPrice;
 
-
     public ShoppingCart(double totalPrice){
         this.totalPrice = totalPrice;
     }
