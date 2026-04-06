@@ -26,7 +26,6 @@ public class ShoppingCart {
         }
     }
 
-
     //nu face ce trebuie main-ul dar nu imi dau seama daca trebuia sa folosesc o lista aici de fapt
     public static void main(){
         ShoppingCart product = new ShoppingCart(100);
